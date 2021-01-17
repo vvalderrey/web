@@ -1,0 +1,658 @@
+@font-face {
+    font-family: "fuenteRegular";
+    src: url("../fonts/NotoSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "fuenteItalic";
+    src: url("../fonts/NotoSerif-Italic.ttf");
+}
+
+@font-face {
+    font-family: "fuenteBold";
+    src: url("../fonts/NotoSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: "fuenteBoldItalic";
+    src: url("../fonts/NotoSerif-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "fuenteOpenRegular";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "fuenteOpenItalic";
+    src: url("../fonts/OpenSans-BoldItalic.ttf");
+}
+
+html {
+    font-family: 'fuenteRegular', sans-serif, serif;
+    overflow-x: hidden;
+
+}
+
+body {
+    background-color: rgb(232, 232, 232) ;
+}
+
+/* Estilos para el menu de navegación de todas las páginas */
+.cabecera {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.cabecera div {
+    text-align: center;
+    padding: 0px;
+}
+
+.oscarsclub {
+    display: flex;
+    list-style: none;
+}
+
+.oscarsposition {
+    margin-top: 25px;
+}
+
+.oscars {
+    font-family: 'fuenteBold';
+    color: rgb(28, 28, 28); 
+}
+
+.club {
+    color: red;
+    font-family: 'fuenteItalic';
+    text-decoration: none;
+    font-size: large;
+}
+
+.cabecera .botonCabecera {
+    grid-row: 1;
+}
+
+.cabecera li {
+    margin-left: 35px;
+    margin-right: -18px;
+}
+
+.botonCabecera .button {
+    background-color: rgb(155, 23, 0); 
+    color: white;
+    padding: 4px 10px 4px 10px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: 'fuenteRegular';
+}
+
+.button:hover {
+    color: rgb(28, 28, 28); 
+}
+
+.cabecera div p a {
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+    font-family: "fuenteOpenItalic";
+}
+
+.clubes {
+    margin-top: 25px;
+}
+
+.clubes p {
+    color: #555;
+}
+
+.sesiones {
+    margin-top: 25px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+
+/* Menú de navegación */
+    .cabecera {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .cabecera .botonCabecera {
+        grid-column: 11 / 13;
+        margin-top: 40px;
+        margin-right: -100px;
+    }
+
+    .cabecera li {
+        margin-left: -30px;
+        margin-right: 40px;
+    }
+
+    .clubes {
+        grid-column: 5 / 7;
+    }
+
+    .sesiones {
+        grid-column: 7 / 9;
+    }
+
+/* INDEX */
+    .cuerpo {
+        width: 47%;
+        margin-left: 385px;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin-left: 210px;
+    }
+
+    .formulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .formulario .formulario2 {
+        margin-left: 60px;
+        max-width: 403px;
+        margin-bottom: 100px;
+    }
+
+    .formulario div {
+        margin-left: 470px;
+        max-width: 250px;
+    }
+
+/* Pie de página */
+    .pie {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 220px;
+        margin-top: -30px;
+    }
+
+    .enlacesFooter {
+        display: flex;
+    }
+
+    .enlacesFooter ul {
+        display: flex;
+    }
+
+    .enlacesFooter ul li {
+        padding: 5px;
+    }
+
+
+    .enlacesFooter3 {
+        display: flex;
+    }
+
+    .bloque1 {
+        position: absolute;
+        left: -30px;
+        margin-bottom: -30px;
+    }
+
+    .bloque2 {
+        position: absolute;
+        right: 0px;
+    }
+
+    .bloque3 {
+        position: absolute;
+        left: -30px;
+        margin-top: -20px;
+        margin-bottom: 60px;
+    }
+
+    .simbolo {
+        margin-bottom: 7px;
+    }
+
+/* CLUBES TEMÁTICOS */
+    .seccion1 {
+        margin-left: 250px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 999px;
+        margin-bottom: 100px;
+    }
+
+    .seccion1 figure {
+        flex-direction: column;
+        flex: 280px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .seccion1 figure img {
+        margin-top: 10px;
+        max-width: 80%;
+    }
+
+/* SESIONES */
+    .cuerpoSesiones {
+        width: 999px;
+        text-align: center;
+        margin-left: 250px;
+    }
+
+    .seccion1sesiones {
+        margin-top: -50px;
+        width: 800px;
+        margin-left: 95px;
+    }
+
+    .seccion1sesiones .texto1 {
+        text-align: left;
+    }
+
+    .cuerpoSesiones .separacion {
+        color: rgb(155, 23, 0);
+        text-align: center;
+    }
+
+    .seccion2sesiones {
+        text-align: left;
+    }
+
+    .fotosSesiones {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin-bottom: 80px;
+        grid-gap: 40px;
+    }
+
+    .gridSesiones {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+    .gridSesiones div {
+        display: flex;
+    }
+
+    .gridSesiones div figure{
+        flex: 1;
+    }
+
+    .tituloSeccion {
+        text-align: left;
+    }
+
+    .titulo1 {
+        font-size: 20px;
+    }
+
+/* DETALLE */
+    .cuerpoDetalle {
+        display: grid;
+        grid-template-columns: 1fr  1fr 2fr;
+        grid-gap: 30px;
+        width: 60%;
+        margin-left: 290px;
+        margin-bottom: 50px;
+    }
+
+    .seccion2klaus {
+        grid-column: 2/5;
+        margin-top: 150px;
+    }
+
+    .seccion1klaus {
+        width: 330px;
+    }
+
+  }
+/***********************************************************************************/
+
+/* Estilos para la página de Index */
+.cuerpo {
+    text-align: center;
+}
+
+.titulo {
+    font-family: 'fuenteBold';
+    margin-top: 60px;
+    text-align: center;
+}
+
+.texto1 {
+    display: flex;
+
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons img {
+    max-width: 40%;
+}
+
+.formulario li {
+    list-style: none;
+    margin-left: -40px;
+    margin-top: 8px;
+}
+
+.formulario input {
+    width: 90%;
+    padding: 10px;
+}
+
+::placeholder {
+    color: #555;
+}
+
+.letraFormulario {
+     font-family: 'fuenteOpenRegular';
+     font-size: 9px;
+     color: rgb(28, 28, 28) ;
+   
+}
+
+.letraFormulario a {
+    color: rgb(155, 23, 0);
+    text-decoration: none;
+}
+
+.letraFormulario a:hover {
+    color: rgb(28, 28, 28) ;
+}
+
+.checkbox label {
+    font-family: 'fuenteOpenRegular';
+    font-size: 9px;
+    color: rgb(28, 28, 28) ;
+}
+
+.checkbox l {
+    margin-left: -50px;
+}
+
+.checkbox label input {
+    margin-left: -180px;
+}
+
+.buttonRegistro {
+    background-color: rgb(155, 23, 0); 
+    color: white;
+    padding: 10px 22px 10px 22px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: 'fuenteRegular';
+}
+
+.buttonRegistro:hover {
+    color: rgb(28, 28, 28);
+}
+
+/* Estilos para el footer de todas las páginas */
+footer {
+    position: absolute;
+    width: 100%;
+    height: 370px;
+    margin-left: -8px;
+    color: white;
+    background-color: rgb(67, 58, 68) ;
+    margin-top: 60px;
+}
+
+.enlacesFooter {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.enlacesFooter ul {
+    list-style: none;
+    margin-top: 60px;
+}
+
+.enlacesFooter ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'fuenteOpenRegular';
+}
+
+.enlacesFooter ul li a:hover {
+    color: rgb(28, 28, 28) ;
+}
+
+.enlacesFooter3 ul {
+    list-style: none;
+    margin-top: 50px;
+    bottom: -20px;
+}
+
+.enlacesFooter3 ul li {
+    color: rgb(255, 255, 255);
+    font-family: 'fuenteOpenRegular';
+}
+
+.pie .enlacesFooter3 ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'fuenteOpenRegular';
+}
+
+.enlacesFooter3 ul li a:hover {
+    color: rgb(28, 28, 28);
+}
+
+.simbolo {
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.simbolo:hover {
+    color: rgb(28, 28, 28);
+}
+
+.pie {
+    text-align: center;
+}
+
+.pie a {
+    bottom: 0px;
+}
+
+
+/* Estilos de la página Clubes Temáticos */
+
+.cuerpoClubes {
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+.seccion1 img {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.puntos {
+    color: rgb(155, 23, 0);
+}
+
+.seccion1 figure div {
+    text-align: left;
+}
+
+.tituloImagen {
+    font-size: 13px;
+}
+
+.textos {
+    text-align: left;
+    font-size: 9.5px;
+    margin-top: 10px;
+
+}
+
+.enlaceSesiones {
+    text-align: left;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.enlaceSesiones a {
+    text-decoration: none;
+    color: rgb(155, 23, 0);
+}
+
+.enlaceSesiones a:hover {
+    color: rgb(28, 28, 28);
+}
+
+/* Estilos para la página Sesiones */
+
+.titulo1 {
+    text-align: left;
+    font-family: 'fuenteBold';
+    margin-top: 30px;
+}
+
+.listaSesiones {
+    list-style: none;
+}
+
+.listaSesiones li a{
+    font-family: 'fuenteOpenRegular';
+    margin-left: -40px;
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+}
+
+.separacion {
+    color: rgb(232, 232, 232) ;
+}
+
+.fotosSesiones div figure a img {
+    max-width: 100%;
+}
+
+.tituloSeccion {
+    font-family: 'fuenteOpenRegular';
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.pieImagen {
+    background-color: white;
+    width: 260px;
+    margin-top: -5px;
+    padding: 5px;
+}
+
+.enlaceImagen {
+    text-decoration: none;
+    color: rgb(155, 23, 0);
+    font-family: 'fuenteOpenRegular';
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.imagen {
+    position:relative;
+}
+.imagen>div {
+    position: relative;
+    bottom:5px;
+    color:rgb(155, 23, 0);
+    background-color:white;
+    padding:12px 5px;
+    font-weight:bold;
+    height: 27px;
+    font-family: 'fuenteOpenRegular';
+}
+
+.imagen div a {
+    font-family: 'fuenteOpenRegular';
+    color:rgb(155, 23, 0);
+    font-weight:bold;
+    text-decoration: none;
+}
+
+/* Estilos para la página detalle-sesion */
+
+.seccion1klaus {
+    margin-top: 50px;
+}
+
+.ariadna {
+    display: flex;
+    list-style: none;
+}
+
+.ariadna li {
+    padding: 5px;
+}
+
+.ariadna li a {
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+}
+
+.klaus {
+    color: #555;
+}
+
+.seccion1klaus p {
+    font-weight: bold;
+}
+
+.linea {
+    margin-top: -33px;
+}
+
+.listaDetalle {
+    list-style: none;
+    margin-left: -27px;
+    margin-top: -7px;
+}
+
+.listaDetalle li {
+    font-size: 13px;
+    padding: 2px;
+}
+
+.fotoSergio {
+    float: left;
+    margin-right: 10px;
+    border-radius: 80px;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+ .seccion2klaus .video {
+    position:relative;
+}
+.video>div {
+    position: relative;
+    bottom:5px;
+    /* padding:12px 5px; */
+    height: 27px;
+    text-align: left;
+    font-family: 'fuenteItalic';
+    font-size: 12px;
+}
+
+.raya {
+    border-bottom: 1px solid black;
+}
